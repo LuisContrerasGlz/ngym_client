@@ -4,7 +4,7 @@ class rep_pag extends Component {
   state = { rep_pagos: [] }
 
   componentDidMount() {
-    fetch('/rep_pagos')
+    fetch('https://gymevolucion.herokuapp.com/rep_pagos')
       .then(res => res.json())
       .then(rep_pagos => this.setState({ rep_pagos }));
   }

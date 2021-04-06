@@ -5,7 +5,7 @@ class exp_pag extends Component {
   state = { pagos: [] }
 
   componentDidMount() {
-    fetch('/pagos')
+    fetch('https://gymevolucion.herokuapp.com/pagos')
       .then(res => res.json())
       .then(pagos => this.setState({ pagos }));
   }

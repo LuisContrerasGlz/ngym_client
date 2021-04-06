@@ -125,7 +125,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
             pa: this.state.pa
         };
         console.log(newUser);
-        axios.post('http://localhost:3001/ins_user',newUser)
+        axios.post('https://gymevolucion.herokuapp.com/ins_user',newUser)
         .then((response) => {
             console.log(response);
         }).catch((e) => {

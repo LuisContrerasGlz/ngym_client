@@ -16,7 +16,7 @@ class list_soc extends Component {
 
 
   componentDidMount() {
-    fetch('/users')
+    fetch('https://gymevolucion.herokuapp.com/users')
       .then(res => res.json())
       .then(users => this.setState({ users }));
   }
