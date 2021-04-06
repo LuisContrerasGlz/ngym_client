@@ -1,8 +1,19 @@
 import React,{Component} from 'react';
 import '../components/App.css';
+import ReactDom from "react-dom"; 
+
 
 class list_soc extends Component {
   state = { users: [] }
+
+
+  submitForm(id){  
+    console.log("Hola");
+    console.log(id);
+  }
+
+
+
 
   componentDidMount() {
     fetch('/users')
@@ -16,7 +27,7 @@ class list_soc extends Component {
           <tbody>
             <tr>
               <td  bgcolor="#848484" valign="top">
-                <right><h2><a href="">Agregar Socio</a></h2></right>
+                <right><h2><a href="/ag_socio">Agregar Socio</a></h2></right>
                 <center><h3><font color="white">Clientes registrados</font></h3></center>
                 <table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#000000">
                   <thead>
@@ -49,7 +60,11 @@ class list_soc extends Component {
                           <center><a href="" >Pagos</a></center>
                         </td>
                         <td bgcolor="#2B2D83" width="60">
-                          <center><a href="" >Editar</a></center>
+                          <input 
+                            onClick={ this.submitForm.bind(this,user.id)}
+                            type="button" 
+                            class="btn btn-primary" 
+                            value="Editar"/>
                         </td>
                       </tr>
                     )}
