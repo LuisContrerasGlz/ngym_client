@@ -121,23 +121,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
             cod: this.state.cod,
             md: this.state.md,
             sp: this.state.sp,
-            pe: this.state.pe,
-            pa: this.state.pa
+            pe: this.state.pe
         };
         console.log(newUser);
         axios.post('https://gymevolucion.herokuapp.com/ins_user',newUser)
+        //axios.post('http://localhost:3001/ins_user',newUser)
         .then((response) => {
             console.log(response);
         }).catch((e) => {
             console.log(e);
         });
     }
-
-    //componentDidMount() {
-    //  fetch('/users')
-    //   .then(res => res.json())
-    //  .then(users => this.setState({ users }));
-    //}
 
   render() {
       return (
@@ -278,18 +272,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
                         <option>Semanal</option>
                         <option>Dia</option>
                         </select>
-
-                        &nbsp;&nbsp;<label htmlFor="pa">Pago </label>&nbsp;&nbsp;
-                        <input
-                            id="pa"
-                            name="pa"
-                            type="text"
-                            class="form-control"
-                            placeholder="0.0"
-                            autoComplete="off"
-                            value={this.state.pa}
-                            onChange={(ev) => this.valueToPa(ev.target.value)}
-                        /><br/>
                     </div>
                     <br/><br/>
                     &nbsp;&nbsp;

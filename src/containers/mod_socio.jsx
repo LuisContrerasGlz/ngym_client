@@ -2,8 +2,10 @@ import React,{Component} from 'react';
 import axios from "axios";
 import '../components/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ReactDom from "react-dom";
 
     class agr_socio extends Component {
+
     constructor(props){
         super(props);
         this.state={
@@ -21,7 +23,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
             pa: ''
         }
     }
-  
+
+    
 
     valueToNombre = (nombre) => {
       console.log(this.state);
@@ -36,9 +39,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
             tel: tel
         })
      };
-  
+
     valueToEmail = (email) => {
-        console.log(this.state);  
+        console.log(this.state);
         this.setState({
             email: email
         })
@@ -52,61 +55,79 @@ import 'bootstrap/dist/css/bootstrap.min.css';
     };
 
     valueToCol = (col) => {
-        console.log(this.state);  
+        console.log(this.state);
         this.setState({
             col: col
         })
     };
 
     valueToCiu = (ciu) => {
-        console.log(this.state);  
+        console.log(this.state);
         this.setState({
             ciu: ciu
         })
     };
 
     valueToEdo = (edo) => {
-        console.log(this.state);  
+        console.log(this.state);
         this.setState({
             edo: edo
         })
     };
 
     valueToCod = (cod) => {
-        console.log(this.state);  
+        console.log(this.state);
         this.setState({
             cod: cod
         })
     };
 
     valueToMd = (md) => {
-        console.log(this.state);  
+        console.log(this.state);
         this.setState({
             md: md
         })
     };
 
     valueToSp = (sp) => {
-        console.log(this.state);  
+        console.log(this.state);
         this.setState({
             sp: sp
         })
     };
 
     valueToPe = (pe) => {
-        console.log(this.state);  
+        console.log(this.state);
         this.setState({
             pe: pe
         })
     };
 
     valueToPa = (pa) => {
-        console.log(this.state);  
+        console.log(this.state);
         this.setState({
             pa: pa
         })
     };
 
+
+    Function editUser(props){
+        const [user, setUser]=useState({});
+    
+        useEffect(() => {
+          console.log(props.match.params.id);
+          //fetch('https://gymevolucion.herokuapp.com/user/'+props.match.params.id)
+          //.then(res => res.json())
+          //.then(users => this.setState({ users }));
+        });
+      }
+
+
+
+
+
+
+/*  
     submitForm = () => {
         const newUser = {
             method: 'HEAD',
@@ -129,9 +150,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
         .then((response) => {
             console.log(response);
         }).catch((e) => {
-            console.log(e);
-        });
-    }
+            console.log(e);*/
+//        });
+//    }
 
     //componentDidMount() {
     //  fetch('/users')
@@ -140,7 +161,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
     //}
 
   render() {
-      return (
+    //const { match: {params} } = this.props;
+    //console.log(params.id) // muestra el dato
+      
+    
+    return (
         <>
             <br/><br/>
             <div>
@@ -171,7 +196,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
                             value={this.state.tel}
                             onChange={ (ev) => { this.valueToTel(ev.target.value)}}
                         />
-                        
+
                         &nbsp;&nbsp;<label htmlFor="email">Correo Electronico </label>&nbsp;&nbsp;
                         <input
                             id="email"
@@ -183,7 +208,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
                             value={this.state.email}
                             onChange={(ev) => this.valueToEmail(ev.target.value)}
                         />
-                    </div>  
+                    </div>
                     <div class="input-group mb-3">
                         &nbsp;&nbsp;<label htmlFor="dir">Dirección</label>&nbsp;&nbsp;
                         <input
@@ -196,7 +221,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
                             value={this.state.dir}
                             onChange={(ev) => this.valueToDir(ev.target.value)}
                         />
-                        
+
                         &nbsp;&nbsp;<label htmlFor="col">Colonia</label>&nbsp;&nbsp;
                         <input
                             id="col"
@@ -251,7 +276,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
                         <input
                             id="cod"
                             name="md"
-                            type="date" 
+                            type="date"
                             class="form-control"
                             placeholder="00/00/0000"
                             autoComplete="off"
@@ -263,7 +288,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
                         <input
                             id="sp"
                             name="sp"
-                            type="date" 
+                            type="date"
                             class="form-control"
                             placeholder="00/00/0000"
                             autoComplete="off"
@@ -293,10 +318,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
                     </div>
                     <br/><br/>
                     &nbsp;&nbsp;
-                    <input 
+                    <input
                         onClick={this.submitForm}
-                        type="button" 
-                        class="btn btn-primary" 
+                        type="button"
+                        class="btn btn-primary"
                         value="Agregar"/>
                 </form>
             </div>
