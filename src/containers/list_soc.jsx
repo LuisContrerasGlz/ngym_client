@@ -50,7 +50,7 @@ class list_soc extends Component {
                           {user.np} 
                         </td>
                         <td  bgcolor="#1E1E5D" width="60">
-                          <center><a href="" >Pagos</a></center>
+                          <center><a href={"/a_pag/"+user.id} >Pagos</a></center>
                         </td>
                         <td bgcolor="#2B2D83" width="60">
                           <center><a href={"/m_socio/"+user.id}>Editar</a></center>  

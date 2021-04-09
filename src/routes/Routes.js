@@ -8,6 +8,8 @@ import Rep_pag from './r_pag';
 import Ag_socio from './agr_socio';
 //import Mo_socio from './m_socio';
 import Mo_socio from "./mod_socio";
+//import A_pag from "./a_pag"
+import A_pag from "./pagos";
 //import App from 'App.js'
 
 
@@ -22,6 +24,7 @@ function Routes(){
                 <Route exact path="/rep_pag" component={Rep_pag }   />
                 <Route exact path="/ag_socio" component={Ag_socio }   />
                 <Route path="/m_socio/:id" component={Mo_socio }   />
+                <Route path="/a_pag/:id" component={A_pag}   />
             </Switch>
         </BrowserRouter>
 

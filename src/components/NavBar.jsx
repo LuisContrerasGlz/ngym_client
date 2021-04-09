@@ -39,11 +39,11 @@ const NavBar = () => {
                 <div className="App">
                     <Dropdown isOpen={dropdown2} toggle={opencloseDropdown2}>
                         <DropdownToggle caret id="m2">
-                            Procesos de la empresa
+                            Procesos de la empres
                         </DropdownToggle>
                         <DropdownMenu aria-labelledby="m2">
-                            <a href="/exp_soc" class="dropdown-item">Exporta socios</a>
-                            <a href="/exp_pag" class="dropdown-item">Exporta pagos</a>
+                            <a href="/exp_soc" class="dropdown-item">Reporta socios</a>
+                            <a href="/exp_pag" class="dropdown-item">Reporta pagos</a>
                             <a href="/rep_pag" class="dropdown-item">Reporta pagos</a>
                         </DropdownMenu>
                     </Dropdown>
