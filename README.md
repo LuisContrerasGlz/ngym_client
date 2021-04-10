@@ -12,10 +12,13 @@ Everything connecting the client which is done with React with the MySQL databas
 
 1. The main site page of the system which is this current repository.
 
+   https://github.com/LuisContrerasGlz/ngym_client
+
 2. The Backend Server for the application which code is in the following repository:
    https://github.com/LuisContrerasGlz/ngym_server
 
 3. Check in app which code is in the following repository:
+
    https://github.com/LuisContrerasGlz/GYM_Act_P3
 
    https://luiscontrerasglz.github.io/GYM_Act_P3/
