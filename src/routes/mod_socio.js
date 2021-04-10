@@ -101,8 +101,8 @@ function Mod_socio(props) {
             id: props.match.params.id
         };
         console.log(newUser);
-        axios.post('https://gymevolucion.herokuapp.com/act_user',newUser)
-        //axios.post('http://localhost:3001/act_user',newUser)
+        //axios.post('https://gymevolucion.herokuapp.com/act_user',newUser)
+        axios.post('http://localhost:3001/act_user',newUser)
         .then((response) => {
             console.log(response);
         }).catch((e) => {
@@ -122,8 +122,8 @@ function Mod_socio(props) {
             id: props.match.params.id
         };
         console.log(newUser);
-        axios.post('https://gymevolucion.herokuapp.com/act_user',newUser)
-        //axios.post('http://localhost:3001/act_user',newUser)
+        //axios.post('https://gymevolucion.herokuapp.com/act_user',newUser)
+        axios.post('http://localhost:3001/act_user',newUser)
         .then((response) => {
             console.log(response);
         }).catch((e) => {
@@ -142,8 +142,8 @@ function Mod_socio(props) {
             id: props.match.params.id
         };
         console.log(newUser);
-        axios.post('https://gymevolucion.herokuapp.com/act_user',newUser)
-        //axios.post('http://localhost:3001/act_user',newUser)
+        //axios.post('https://gymevolucion.herokuapp.com/act_user',newUser)
+        axios.post('http://localhost:3001/act_user',newUser)
         .then((response) => {
             console.log(response);
         }).catch((e) => {
@@ -162,8 +162,8 @@ function Mod_socio(props) {
             id: props.match.params.id
         };
         console.log(newUser);
-        axios.post('https://gymevolucion.herokuapp.com/act_user',newUser)
-        //axios.post('http://localhost:3001/act_user',newUser)
+        //axios.post('https://gymevolucion.herokuapp.com/act_user',newUser)
+        axios.post('http://localhost:3001/act_user',newUser)
         .then((response) => {
             console.log(response);
         }).catch((e) => {
@@ -182,8 +182,8 @@ function Mod_socio(props) {
             id: props.match.params.id
         };
         console.log(newUser);
-        axios.post('https://gymevolucion.herokuapp.com/act_user',newUser)
-        //axios.post('http://localhost:3001/act_user',newUser)
+        //axios.post('https://gymevolucion.herokuapp.com/act_user',newUser)
+        axios.post('http://localhost:3001/act_user',newUser)
         .then((response) => {
             console.log(response);
         }).catch((e) => {
@@ -202,8 +202,8 @@ function Mod_socio(props) {
             id: props.match.params.id
         };
         console.log(newUser);
-        axios.post('https://gymevolucion.herokuapp.com/act_user',newUser)
-        //axios.post('http://localhost:3001/act_user',newUser)
+        //axios.post('https://gymevolucion.herokuapp.com/act_user',newUser)
+        axios.post('http://localhost:3001/act_user',newUser)
         .then((response) => {
             console.log(response);
         }).catch((e) => {
@@ -222,8 +222,8 @@ function Mod_socio(props) {
             id: props.match.params.id
         };
         console.log(newUser);
-        axios.post('https://gymevolucion.herokuapp.com/act_user',newUser)
-        //axios.post('http://localhost:3001/act_user',newUser)
+        //axios.post('https://gymevolucion.herokuapp.com/act_user',newUser)
+        axios.post('http://localhost:3001/act_user',newUser)
         .then((response) => {
             console.log(response);
         }).catch((e) => {
@@ -242,8 +242,8 @@ function Mod_socio(props) {
             id: props.match.params.id
         };
         console.log(newUser);
-        axios.post('https://gymevolucion.herokuapp.com/act_user',newUser)
-        //axios.post('http://localhost:3001/act_user',newUser)
+        //axios.post('https://gymevolucion.herokuapp.com/act_user',newUser)
+        axios.post('http://localhost:3001/act_user',newUser)
         .then((response) => {
             console.log(response);
         }).catch((e) => {

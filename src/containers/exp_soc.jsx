@@ -6,6 +6,7 @@ class exp_soc extends Component {
 
   componentDidMount() {
     fetch('https://gymevolucion.herokuapp.com/users')
+    //fetch('http://localhost:3001/users')
       .then(res => res.json())
       .then(users => this.setState({ users }));
   }

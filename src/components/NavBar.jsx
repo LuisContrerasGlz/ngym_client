@@ -39,12 +39,13 @@ const NavBar = () => {
                 <div className="App">
                     <Dropdown isOpen={dropdown2} toggle={opencloseDropdown2}>
                         <DropdownToggle caret id="m2">
-                            Procesos de la empres
+                            Procesos de la empresa
                         </DropdownToggle>
                         <DropdownMenu aria-labelledby="m2">
-                            <a href="/exp_soc" class="dropdown-item">Reporta socios</a>
-                            <a href="/exp_pag" class="dropdown-item">Reporta pagos</a>
-                            <a href="/rep_pag" class="dropdown-item">Reporta pagos</a>
+                            <a href="/exp_soc" class="dropdown-item">Listado de socios</a>
+                            <a href="/exp_pag" class="dropdown-item">Reporte de pagos</a>
+                            <a href="/rep_pag" class="dropdown-item">pagos por dia</a>
+                            <a href="https://luiscontrerasglz.github.io/GYM_Act_P3/" class="dropdown-item" target="_blank">Check-in</a>
                         </DropdownMenu>
                     </Dropdown>
 

@@ -6,6 +6,7 @@ class exp_pag extends Component {
 
   componentDidMount() {
     fetch('https://gymevolucion.herokuapp.com/pagos')
+    //fetch('http://localhost:3001/pagos')
       .then(res => res.json())
       .then(pagos => this.setState({ pagos }));
   }

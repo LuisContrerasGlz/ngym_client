@@ -20,6 +20,7 @@ function Pagos(props) {
             mode: 'no-cors',
             id: props.match.params.id
         };
+        console.log(newUser);
         axios.post('https://gymevolucion.herokuapp.com/user',newUser)
         //axios.post('http://localhost:3001/user',newUser)
         .then((response) => {
@@ -64,7 +65,7 @@ function Pagos(props) {
         console.log("---------------------------------------------------------------------------------");
         
 
-        axios.post('https://gymevolucion.herokuapp.com/act_user',newUser)
+        axios.post('https://gymevolucion.herokuapp.com/ins_pago',newUser)
         //axios.post('http://localhost:3001/ins_pago',newUser)
         .then((response) => {
             console.log(response);
