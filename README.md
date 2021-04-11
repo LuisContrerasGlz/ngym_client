@@ -10,7 +10,7 @@ Everything connecting the client which is done with React with the MySQL databas
 
 Working integrated from Heroku https://www.heroku.com/.
 
-## There are several components to this system to work in the totality:
+## There are several components to this system to work in the totality, here you can find the repos to code and links to sub-systems:
 
 1. The main site page of the system which is this current repository.
 
