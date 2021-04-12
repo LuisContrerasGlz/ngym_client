@@ -6,6 +6,8 @@ The application has different modules to work with the data, you can see the use
 
 It also lets you Check in into the gym so the tracking of capacity is measured and controlled.
 
+The main goal for Check in system is for the administrator to have control on the capacity and people at the gym, that way there is also accurate information about that and also to check if the person that is entering has any debts for their montly payment or the model they choce as their membership.
+
 Everything connecting the client which is done with React with the MySQL database in jawsdb and Express server for backend.
 
 Working integrated from Heroku https://www.heroku.com/.
